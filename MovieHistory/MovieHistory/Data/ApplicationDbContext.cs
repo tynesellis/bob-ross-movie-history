@@ -14,6 +14,9 @@ namespace MovieHistory.Data
             : base(options)
         {
         }
+        DbSet<Movie> Movie {get; set;}
+        DbSet<MovieUser> MovieUser { get; set; }
+        DbSet<Recommendation> Recommendation { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
